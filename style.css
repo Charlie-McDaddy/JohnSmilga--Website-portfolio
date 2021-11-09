@@ -247,7 +247,7 @@ nav ul li a:hover {
 .title-text {
   font-size: 60px;
   text-transform: capitalize;
-  color: var(--beau-blue);
+  color: var(--egyptian-blue);
 }
 
 .title-underline {
@@ -261,7 +261,22 @@ nav ul li a:hover {
   border: 3px solid var(--han-blue);
 }
 
-@media screen and (min-width: ) {
-   {
+@media screen and (min-width: 576px) {
+  .skills-center {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .skill {
+    flex: 0 1 calc(25% - 1em);
   }
 }
